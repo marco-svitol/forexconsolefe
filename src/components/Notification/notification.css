@@ -1,0 +1,165 @@
+.fa-bell {
+	width: 1.5vw !important;
+	height: 1.5vw !important;
+	color: #eca011;
+}
+
+.fa-bell[data-prefix='fas'] {
+	animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+#notification-box {
+	display: flex;
+	flex-direction: column;
+	z-index: -999999;
+	width: 20vw;
+	max-height: 25vw;
+	box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3);
+	transition: opacity 0.2s ease-in-out;
+	background: #fff;
+}
+
+#notification-box ul::-webkit-scrollbar {
+	width: 14px;
+	height: 18px;
+}
+
+#notification-box ul::-webkit-scrollbar-thumb {
+	height: 6px;
+	border: 4px solid rgba(0, 0, 0, 0);
+	background-clip: padding-box;
+	border-radius: 7px;
+	background-color: rgba(0, 0, 0, 0.15);
+	box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05),
+		inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+#notification-box h2 {
+	background: #007bff;
+	margin: 0;
+	text-align: left;
+	padding: 1.1vw 0.9vw;
+	color: #fff;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.17);
+	font-size: 1.1vw;
+}
+
+#notification-box ul {
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+	flex: 1 1 auto;
+	list-style-type: none;
+	overflow-y: scroll;
+	margin: 0.4vw 0;
+}
+
+#notification-box ul li {
+	padding: 0.2vw 0.5vw;
+	color: #777;
+}
+
+#notification-box ul hr {
+	width: 90%;
+	border: none;
+	border-bottom: 3px solid #cdcdd8;
+	border-radius: 10px;
+	margin: 0.9vw auto;
+}
+
+#notification-box ul li .item {
+	justify-content: space-between;
+	min-height: 4vw;
+}
+
+#notification-box ul li .time-group {
+	align-items: center;
+	margin-right: 0.7vw;
+}
+
+#notification-box ul li .date,
+#notification-box ul li .time {
+	flex: 1 1 auto;
+	color: #75778d;
+	font-weight: 600;
+	margin-right: 0.5vw;
+	padding-top: 0.2vw;
+}
+
+#notification-box ul li .button {
+	flex: 1 1 auto;
+}
+
+#notification-box ul li .type {
+	align-items: center;
+	justify-content: space-around;
+	margin-right: 0.7vw;
+}
+
+#notification-box ul li .right-line {
+	border: none;
+	border-right: 3px solid #e8e8f5;
+	height: 75%;
+}
+
+#notification-box ul li h3.title {
+	margin: 0;
+	color: #585569;
+}
+
+/* Notification type: basso, medio, alto, applicativo */
+#notification-box ul li .critical {
+	border: 3px solid #dc3545;
+	border-radius: 50%;
+	height: 0.677vw;
+	width: 0.677vw;
+}
+
+#notification-box ul li .high {
+	border: 3px solid #fd7e14;
+	border-radius: 50%;
+	height: 0.677vw;
+	width: 0.677vw;
+}
+
+#notification-box ul li .medium {
+	border: 3px solid #ffc107;
+	border-radius: 50%;
+	height: 0.677vw;
+	width: 0.677vw;
+}
+
+#notification-box ul li .low {
+	border: 3px solid #28a745;
+	border-radius: 50%;
+	height: 0.677vw;
+	width: 0.677vw;
+}
+
+#notification-box .no-notification {
+	margin: 2vw;
+}

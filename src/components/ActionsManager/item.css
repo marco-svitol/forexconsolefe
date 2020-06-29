@@ -1,0 +1,9 @@
+tr > td {
+	vertical-align: middle !important;
+}
+
+#main-cash-button {
+	z-index: 99999;
+	position: sticky;
+	bottom: 1vw;
+}

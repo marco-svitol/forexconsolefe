@@ -1,0 +1,13 @@
+.dropdown-toggle:after {
+	display: none !important;
+}
+
+.btn-light {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+.dropdown-toggle img {
+	width: 2.9vw;
+	height: auto;
+}

@@ -1,0 +1,8 @@
+table .currency-header {
+	min-width: 6vw;
+}
+
+table .fixed-size {
+	max-width: 5.417vw;
+	width: 5.417vw !important;
+}
